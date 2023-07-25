@@ -7283,7 +7283,8 @@ body {
     width: 100%; }
 
 span {
-  color: #bfbfbf; }
+  color: #bfbfbf;
+  white-space: pre; }
 
 a {
   -webkit-transition: .3s all ease;

@@ -1,7 +1,8 @@
-// AOS.init({
-//  	duration: 800,
-//  	easing: 'slide'
-//  });
+import Aos from "aos";
+Aos.init({
+ 	duration: 800,
+ 	easing: 'slide'
+ });
 
 //  ( function($) {
 
