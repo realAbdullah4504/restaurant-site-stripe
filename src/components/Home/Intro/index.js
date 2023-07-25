@@ -15,22 +15,25 @@ const Intro = () => {
                             <div class="col-md-4 d-flex ftco-animate">
                                 <div class="icon"><span class="icon-phone"></span></div>
                                 <div class="text">
-                                    <h3>000 (123) 456 7890</h3>
+                                    <h3>(+92)-349-6807869</h3>
                                     <p>A small river named Duden flows</p>
                                 </div>
                             </div>
                             <div class="col-md-4 d-flex ftco-animate">
                                 <div class="icon"><span class="icon-my_location"></span></div>
                                 <div class="text">
-                                    <h3>198 West 21th Street</h3>
-                                    <p>Suite 721 New York NY 10016</p>
+                                    <h3>Main Gulberg Road Jinnah Colony
+                                        Fatima Center 2nd Floor Office # 2
+                                    </h3>
+                                    <p>OPP ForKs n Knives
+                                        Faisalabad,38000</p>
                                 </div>
                             </div>
                             <div class="col-md-4 d-flex ftco-animate">
                                 <div class="icon"><span class="icon-clock-o"></span></div>
                                 <div class="text">
                                     <h3>Open Monday-Friday</h3>
-                                    <p>8:00am - 9:00pm</p>
+                                    <p>12:00pm - 01:00am</p>
                                 </div>
                             </div>
                         </div>

@@ -21,7 +21,7 @@ const Footer = () => {
                         <div class="ftco-footer-widget mb-4">
                             <h2 class="ftco-heading-2">Recent Blog</h2>
                             <div class="block-21 mb-4 d-flex">
-                                <a class="blog-img mr-4" style={{backgroundImage: 'url(images/image_1.jpg)'}}></a>
+                                <a class="blog-img mr-4" style={{ backgroundImage: 'url(images/image_1.jpg)' }}></a>
                                 <div class="text">
                                     <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
                                     <div class="meta">
@@ -32,7 +32,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div class="block-21 mb-4 d-flex">
-                                <a class="blog-img mr-4" style={{backgroundImage: 'url(images/image_2.jpg)'}}></a>
+                                <a class="blog-img mr-4" style={{ backgroundImage: 'url(images/image_2.jpg)' }}></a>
                                 <div class="text">
                                     <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
                                     <div class="meta">
@@ -60,9 +60,12 @@ const Footer = () => {
                             <h2 class="ftco-heading-2">Have a Questions?</h2>
                             <div class="block-23 mb-3">
                                 <ul>
-                                    <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                                    <li ><span class="icon icon-map-marker"> </span><p class="text" >    Main Gulberg Road Jinnah Colony
+                                        Fatima Center 2nd Floor Office # 2
+                                        OPP ForKs n Knives
+                                        Faisalabad,38000</p></li>
+                                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+92)-349-6807869</span></a></li>
+                                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">hr@ghanisoft.com</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -73,7 +76,7 @@ const Footer = () => {
 
                         <p>
                             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>

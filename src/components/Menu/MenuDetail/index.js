@@ -84,7 +84,7 @@ const MenuDetail = () => {
                     </div>
                     <div class="col-lg-6 d-flex ftco-animate">
                         <div class="services-wrap d-flex">
-                            <a href="#" class="img" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
+                            <a href="#" class="img order-lg-last" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
                             <div class="text p-4">
                                 <h3>1 Large Pizza & 5 Wings</h3>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -141,7 +141,7 @@ const MenuDetail = () => {
                     </div>
                     <div class="col-lg-6 d-flex ftco-animate">
                         <div class="services-wrap d-flex">
-                            <a href="#" class="img" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
+                            <a href="#" class="img order-lg-last" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
                             <div class="text p-4">
                                 <h3>1 Medium Pizza & 5 Wings</h3>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -198,7 +198,7 @@ const MenuDetail = () => {
                     </div>
                     <div class="col-lg-6 d-flex ftco-animate">
                         <div class="services-wrap d-flex">
-                            <a href="#" class="img" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
+                            <a href="#" class="img order-lg-last" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
                             <div class="text p-4">
                                 <h3>1 Small Pizza & 5 Wings</h3>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -255,7 +255,7 @@ const MenuDetail = () => {
                     </div>
                     <div class="col-lg-6 d-flex ftco-animate">
                         <div class="services-wrap d-flex">
-                            <a href="#" class="img" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
+                            <a href="#" class="img order-lg-last" style={{ backgroundImage: 'url(images/pizza-3.jpg)' }}></a>
                             <div class="text p-4">
                                 <h3>1 Large Pizza & Pasta</h3>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
