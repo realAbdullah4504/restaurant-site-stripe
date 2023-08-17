@@ -17,7 +17,7 @@ const Contact = () => {
             [name]: value
         }
         //console.log(filteredData);
-        setUserDetails(filteredData);
+        setUserDetails({...filteredData,status:true});
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
