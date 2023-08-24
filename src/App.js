@@ -15,17 +15,11 @@ function App() {
   useEffect(() => {
     getDeals()
       .then((res) => {
-        // console.log(res);
+       console.log(res);
         setDeals(res);
       })
       .catch((err) => console.log(err));
 
-      getMenu()
-      .then((res) => {
-        // console.log(res);
-        setMenu(res);
-      })
-      .catch((err) => console.log(err));
   }, []);
   return (
     <>
@@ -33,7 +27,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home deals={deals}/>} />
-          <Route path="/menu" element={<Menu deals={deals} menu={menu}/>} />
+          <Route path="/menu" element={<Menu deals={deals}/>} />
         </Routes>
         <Footer />
 

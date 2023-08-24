@@ -1,9 +1,31 @@
 import React from "react";
 import Deals from "./Deals";
 import Menu from "./Menu";
+import { useEffect } from "react";
 
-const MenuDetail = ({ deals: { deals }, menu: { menu } }) => {
-  console.log(menu);
+const MenuDetail = ({ deals: { deals } }) => {
+  // console.log(menu);
+
+  //   console.log("deals", deals);
+  const groupedDeals =
+    deals?.reduce((groups, deal) => {
+      const categoryIdValue = deal.categoryId.value; // Extract the categoryId.value
+      const categoryTypeDeals = deal.type.value === "deals";
+      // console.log('type',categoryType)
+
+      if (!groups[categoryIdValue]) {
+        groups[categoryIdValue] = []; // Initialize an array for the category if not exists
+      }
+      if (categoryTypeDeals) groups[categoryIdValue].push(deal); // Push the deal into the appropriate category
+      
+      return groups;
+    }, {}) || {};
+
+    const groupedMenu=deals?.filter(deal=>deal.type.value==='menu');
+    console.log('Menu',groupedMenu);
+
+  // console.log("grouped", groupedDeals);
+
   return (
     <section class="ftco-section">
       <div class="container">
@@ -18,8 +40,8 @@ const MenuDetail = ({ deals: { deals }, menu: { menu } }) => {
         </div>
       </div>
       {/* pizza deals */}
-      <Deals deals={deals} />
-      <Menu menu={menu} />
+      <Deals groupedDeals={groupedDeals} />
+      <Menu groupedMenu={groupedMenu} />
     </section>
   );
 };

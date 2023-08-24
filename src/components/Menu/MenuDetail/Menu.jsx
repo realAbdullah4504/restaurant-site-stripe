@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Menu = ({menu}) => {
+const Menu = ({groupedMenu}) => {
     return (
         <div class="container mt-5">
             <div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
@@ -19,7 +19,7 @@ const Menu = ({menu}) => {
             </div>
 
             <div class="row ftco-animate">
-                {menu?.map(({ _id, title, priceSm, priceLg, description, image }) => (
+                {groupedMenu?.map(({ _id, title, price, size:{label}, description, image }) => (
                     <div key={_id} class="col-md-6 ">
                         <div class="pricing-entry d-flex ">
                             <div
@@ -32,7 +32,7 @@ const Menu = ({menu}) => {
                                         <span>{title}</span>
                                     </h3>
 
-                                    <span class="price">Rs {priceSm} {priceLg}</span>
+                                    <span class="price">Rs {price} {label}</span>
                                 </div>
                                 <div class="d-block">
                                     <p>

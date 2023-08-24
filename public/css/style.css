@@ -7928,7 +7928,7 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       content: '';
-      width: 100%;
+      width: 75%;
       height: 1px;
       border-bottom: 1px dashed #bf7e06;
       z-index: -1; }
@@ -7940,7 +7940,7 @@ h1, h2, h3, h4, h5,
         background: url(../images/bg_4.jpg) no-repeat fixed;
         padding-right: 20px; }
     .pricing-entry .text .price {
-      width: 80px;
+      /* width: 80px; */
       color: #fac564;
       text-align: right;
       background: #121618;
