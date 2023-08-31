@@ -2,11 +2,14 @@ import React from "react";
 import Deals from "./Deals";
 import Menu from "./Menu";
 import { useEffect } from "react";
+import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
 
-const MenuDetail = ({ deals: { deals } }) => {
+const MenuDetail = ({ handleClick }) => {
+  const deals = useSelector((state) => state.cart.deals);
+  console.log('deals',deals)
   // console.log(menu);
 
-  //   console.log("deals", deals);
+  // console.log("deals", deals);
   const groupedDeals =
     deals?.reduce((groups, deal) => {
       const categoryIdValue = deal.categoryId.value; // Extract the categoryId.value
@@ -17,12 +20,12 @@ const MenuDetail = ({ deals: { deals } }) => {
         groups[categoryIdValue] = []; // Initialize an array for the category if not exists
       }
       if (categoryTypeDeals) groups[categoryIdValue].push(deal); // Push the deal into the appropriate category
-      
+
       return groups;
     }, {}) || {};
 
     const groupedMenu=deals?.filter(deal=>deal.type.value==='menu');
-    console.log('Menu',groupedMenu);
+  //   console.log('Menu',groupedMenu);
 
   // console.log("grouped", groupedDeals);
 
@@ -39,9 +42,9 @@ const MenuDetail = ({ deals: { deals } }) => {
           </div>
         </div>
       </div>
-      {/* pizza deals */}
-      <Deals groupedDeals={groupedDeals} />
-      <Menu groupedMenu={groupedMenu} />
+      {/* {/* pizza deals */}
+      <Deals handleClick={handleClick} groupedDeals={groupedDeals} />
+      <Menu handleClick={handleClick} groupedMenu={groupedMenu} />
     </section>
   );
 };

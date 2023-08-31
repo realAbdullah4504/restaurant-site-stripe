@@ -15,7 +15,7 @@ import { anim } from "../../main";
 
 
 
-const Home = ({deals}) => {
+const Home = () => {
     useEffect(() => {
       anim(window.$);
     }, [])

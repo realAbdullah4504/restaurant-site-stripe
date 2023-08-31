@@ -1,0 +1,8 @@
+.stickyAlert {
+    position: fixed;
+    display:flex;
+    top: 60px; /* Adjust this value to match the height of your navbar */
+    width: 100%;
+    z-index: 10; 
+    justify-content: center;/* Make sure the alert appears above other content */
+  }

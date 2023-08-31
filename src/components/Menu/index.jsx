@@ -4,7 +4,7 @@ import { anim } from "../../main";
 import MenuDetail from "./MenuDetail";
 import MenuFilter from "./MenuFilter";
 
-const Menu=({deals})=>{
+const Menu=({handleClick})=>{
     useEffect(() => {
         anim(window.$);
       }, [])
@@ -12,7 +12,7 @@ const Menu=({deals})=>{
     return(
         <>
         <Carousal/>
-        <MenuDetail deals={deals}/>
+        <MenuDetail handleClick={handleClick} />
         <MenuFilter/>
         <h1>this is menu</h1>
         </>

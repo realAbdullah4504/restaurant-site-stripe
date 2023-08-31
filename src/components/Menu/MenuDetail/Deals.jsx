@@ -1,7 +1,11 @@
 import React from "react";
 
-const Deals = ({ groupedDeals }) => {
+
+import Product from "./Product";
+
+const Deals = ({ groupedDeals, handleClick }) => {
   return (
+
     <div className="ftco-animate">
       {Object?.keys(groupedDeals)?.map((category, index) => (
         <div key={index}>
@@ -25,30 +29,7 @@ const Deals = ({ groupedDeals }) => {
                 <div className="container-wrap">
                   <div className="row no-gutters ">
                     {groupedDeals[category]?.map((deal) => (
-                      <div key={deal._id} className="col-lg-6 d-flex">
-                        <div className="services-wrap d-flex">
-                          <a
-                            href="#"
-                            className="img"
-                            style={{
-                              backgroundImage: `url(${process.env.REACT_APP_BASE_URL}/deals/${deal.image})`,
-                            }}
-                          ></a>
-                          <div className="text p-4">
-                            <h3>{deal.title}</h3>
-                            <p>{deal.description} </p>
-                            <p className="price">
-                              <span>Rs {deal.price}</span>{" "}
-                              <a
-                                href="#"
-                                className="ml-2 btn btn-white btn-outline-white"
-                              >
-                                Order
-                              </a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                      <Product key={deal._id} handleClick={handleClick} deal={deal}/>
                     ))}
                   </div>
                 </div>
